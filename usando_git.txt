@@ -149,4 +149,11 @@ git checkout cambio-codigo
 # pone cambio-codigo como rama activa
 
 git push -u origin cambio-codigo
-# haer el push a una rama especifica
+# hacer el push a una rama especifica
+
+git push
+# una vez hemos hecho el checkout no es preciso especificar la rama con
+# git push y git pull enviamos o bajamos de la rama seleccionada
+
+git branch -a
+# Nos muestra todas las ramas vivas y el estatus de cada incluido el master.
