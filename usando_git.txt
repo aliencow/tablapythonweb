@@ -99,3 +99,33 @@ cd micarpeta
 git clone https://github.com/aliencow/flask_pymongo.git .
 
 # clonaria dendro de mi carpeta sin crearla
+
+
+git remote -v
+# para ver el status del remoto
+
+git branch -a
+# para ver la rama en la que estamos
+
+
+  ___  _____ _____ _   _  ___   _     _____ ______  ___  _____ _____ _____ _   _  _____ _____   ______ ___________ _____
+ / _ \/  __ \_   _| | | |/ _ \ | |   |_   _|___  / / _ \/  __ \_   _|  _  | \ | ||  ___/  ___|  | ___ \  ___| ___ \  _  |
+/ /_\ \ /  \/ | | | | | / /_\ \| |     | |    / / / /_\ \ /  \/ | | | | | |  \| || |__ \ `--.   | |_/ / |__ | |_/ / | | |
+|  _  | |     | | | | | |  _  || |     | |   / /  |  _  | |     | | | | | | . ` ||  __| `--. \  |    /|  __||  __/| | | |
+| | | | \__/\ | | | |_| | | | || |_____| |_./ /___| | | | \__/\_| |_\ \_/ / |\  || |___/\__/ /  | |\ \| |___| |   \ \_/ /
+\_| |_/\____/ \_/  \___/\_| |_/\_____/\___/\_____/\_| |_/\____/\___/ \___/\_| \_/\____/\____/   \_| \_\____/\_|    \___/
+
+git diff
+# podemos ver los cambios en el código que no ha sido realizado en commit
+
+git add -A
+# una vez actualizados los campos añadimos todo al commit y...
+
+git commit -m "los cambios que sean"
+# ... preparar el commit que sea
+
+git pull origin master
+# Hacemos un pull previo por si alguien ha hecho cambios que no tenemos
+
+git push origin master
+# Finalmente hacemos el push para subir nuestros cambios
