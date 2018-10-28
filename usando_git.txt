@@ -1,12 +1,20 @@
+_____              __ _                            _                          ______  ___   _____ _____ _____ _____ _____
+/  __ \            / _(_)                          (_)                         | ___ \/ _ \ /  ___|_   _/  __ \  _  /  ___|
+| /  \/ ___  _ __ | |_ _  __ _ _   _ _ __ __ _  ___ _  ___  _ __      _   _    | |_/ / /_\ \\ `--.  | | | /  \/ | | \ `--.
+| |    / _ \| '_ \|  _| |/ _` | | | | '__/ _` |/ __| |/ _ \| '_ \    | | | |   | ___ \  _  | `--. \ | | | |   | | | |`--. \
+| \__/\ (_) | | | | | | | (_| | |_| | | | (_| | (__| | (_) | | | |   | |_| |   | |_/ / | | |/\__/ /_| |_| \__/\ \_/ /\__/ /
+\____/\___/|_| |_|_| |_|\__, |\__,_|_|  \__,_|\___|_|\___/|_| |_|    \__, |   \____/\_| |_/\____/ \___/ \____/\___/\____/
+                         __/ |                                        __/ |
+                        |___/                                        |___/
+
 # CMDs para configuración
 
 git config --global user.name "Juan R Nouche"
 git config --global user.email "juan.nouche@gmail.com"
-
-# obtener ayuda de cualquier comando (por ejemplo add)
+# con esto configuramos nuestro usuario
 
 git add --help
-
+# obtener ayuda de cualquier comando (por ejemplo add)
 
 git init
 # inicializa el directorio del proyecto local para trabajar con git
@@ -21,6 +29,7 @@ STAGING AREA: es una zona intermedia donde quedan los ficheros antes de hacer el
 seguros de lo que queremos enviar se hace el commits
 
 git add
+
 # se añaden ficheros al staging AREA
 # solo se añaden los ficheros que no estén dentro de gitignore
 # por ejemplo:
@@ -60,3 +69,33 @@ git remote add origin https://github.com/aliencow/flask_pymongo.git
 
 git push -u origin master #envia y crea un proyecto en github
 #nos va a pedir nuestro usuario y pass en github
+
+
+_____  _     _____ _   _   ___  ______       ______ ___________ _____
+/  __ \| |   |  _  | \ | | / _ \ | ___ \      | ___ \  ___| ___ \  _  |
+| /  \/| |   | | | |  \| |/ /_\ \| |_/ /      | |_/ / |__ | |_/ / | | |
+| |    | |   | | | | . ` ||  _  ||    /       |    /|  __||  __/| | | |
+| \__/\| |___\ \_/ / |\  || | | || |\ \       | |\ \| |___| |   \ \_/ /
+\____/\_____/\___/\_| \_/\_| |_/\_| \_|      \_| \_\____/\_|    \___/
+
+
+# CMDs para empezar un proyecto
+# Opción 2: Proyecto existente en github que se clona en carpeta local
+
+# Primero obtener la dirección del repo en github ejemplo: https://github.com/aliencow/flask_pymongo.git
+
+# sintaxis para clonar:
+
+git clone <urlgit> <carpeta>
+
+# ejemplo:
+
+git clone https://github.com/aliencow/flask_pymongo.git micarpeta #crea el directorio micarpeta y clona el repositorio
+
+# si creamos primero la carpeta y queremos clonar dentro de ella se pone . en lugar del nombre de la micarpeta
+# ejemplo:
+
+cd micarpeta
+git clone https://github.com/aliencow/flask_pymongo.git .
+
+# clonaria dendro de mi carpeta sin crearla
