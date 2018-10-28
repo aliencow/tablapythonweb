@@ -147,3 +147,6 @@ git branch
 
 git checkout cambio-codigo
 # pone cambio-codigo como rama activa
+
+git push -u origin cambio-codigo
+# haer el push a una rama especifica
