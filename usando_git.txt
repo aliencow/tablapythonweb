@@ -1,0 +1,62 @@
+# CMDs para configuración
+
+git config --global user.name "Juan R Nouche"
+git config --global user.email "juan.nouche@gmail.com"
+
+# obtener ayuda de cualquier comando (por ejemplo add)
+
+git add --help
+
+
+git init
+# inicializa el directorio del proyecto local para trabajar con git
+
+git status
+# comprueba el status de los commits
+
+#Para excluir ficheros del commit debemos crear el fichero .gitignore
+#dentro de este fihero van los nombres de fichero directorios o tipos de datos a exlcuir (Ejemplo *.pyc exluye del commit todos los fichero pyc)
+
+STAGING AREA: es una zona intermedia donde quedan los ficheros antes de hacer el final commits. Primero se marcan ahí y una vez que estamos
+seguros de lo que queremos enviar se hace el commits
+
+git add
+# se añaden ficheros al staging AREA
+# solo se añaden los ficheros que no estén dentro de gitignore
+# por ejemplo:
+
+git add mifichero.xxx  #si funcionaria salvo que mifichero.xxx estuviese incluido en .gitignore
+
+git add -A  #añade todo lo que no esté en .gitignore al commit
+
+git reset #contrario de add quita ficheros del commit
+
+git reset mifichero.xxx #quita del staging a mifichero.xxx
+
+git reset   #elimina todos los ficheros del staging
+
+# podemos si estan bien o mal con git status
+
+
+_____ _   _ _   _ _____  ___  ______       ______ ___________ _____
+|  ___| \ | | | | |_   _|/ _ \ | ___ \      | ___ \  ___| ___ \  _  |
+| |__ |  \| | | | | | | / /_\ \| |_/ /      | |_/ / |__ | |_/ / | | |
+|  __|| . ` | | | | | | |  _  ||    /       |    /|  __||  __/| | | |
+| |___| |\  \ \_/ /_| |_| | | || |\ \       | |\ \| |___| |   \ \_/ /
+\____/\_| \_/\___/ \___/\_| |_/\_| \_|      \_| \_\____/\_|    \___/
+
+# CMDs para empezar un proyecto
+# Opción 1: Proyecto existente en carpeta local pasarlo a github
+
+# primer commit
+
+git add -A #añadimos todo lo que no esté en .gitignore
+git status  #comprobamos si es correcto
+git commit -m "primer commit o algo así" #Prepara el commit
+
+git remote add origin https://github.com/aliencow/flask_pymongo.git
+#crear el remote en github desde nuestro usuario previamente github nos da el link para
+#añadir el origin
+
+git push -u origin master #envia y crea un proyecto en github
+#nos va a pedir nuestro usuario y pass en github
