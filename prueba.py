@@ -4,4 +4,6 @@ def hola_lola():
 
 def multiplica(x,y):
     return x*y
-    
+
+def divide(x,y):
+    return x/y

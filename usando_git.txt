@@ -129,3 +129,21 @@ git pull origin master
 
 git push origin master
 # Finalmente hacemos el push para subir nuestros cambios
+
+____________  ___   _   _ _____  _   _ _____ _   _ _____
+| ___ \ ___ \/ _ \ | \ | /  __ \| | | |_   _| \ | |  __ \
+| |_/ / |_/ / /_\ \|  \| | /  \/| |_| | | | |  \| | |  \/
+| ___ \    /|  _  || . ` | |    |  _  | | | | . ` | | __
+| |_/ / |\ \| | | || |\  | \__/\| | | |_| |_| |\  | |_\ \  _ _ _
+\____/\_| \_\_| |_/\_| \_/\____/\_| |_/\___/\_| \_/\____/ (_|_|_)
+
+# los CMDS para crear ramificaciones de cógigo
+
+git branch cambio-codigo
+# crea una rama llamada cambio-codigo
+
+git branch
+# git branch a secas muestra las ramas que hay y cual está activa
+
+git checkout cambio-codigo
+# pone cambio-codigo como rama activa
