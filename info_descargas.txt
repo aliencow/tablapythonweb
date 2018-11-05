@@ -18,3 +18,5 @@ How to use datatables with flask    https://github.com/SergioLlana/datatables-fl
                                     https://github.com/Sighery/mongodb-flask-datatables
 
 How to kill processes on MAC http://www.chriswrites.com/how-to-view-and-kill-processes-using-the-terminal-in-mac-os-x/
+
+Flask Cheat Sheet https://s3.us-east-2.amazonaws.com/prettyprinted/flask_cheatsheet.pdf
