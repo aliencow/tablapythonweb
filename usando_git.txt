@@ -140,7 +140,8 @@ git stash save --keep-index --include-untracked
 # sincronizar con el master con pull
 
 git push --force --set-upstream origin master
-#forzar a que el repositorio se actualice con el local
+#forzar a que el repositorio se actualice con el local para cuando haya
+conflictos pull y push
 
 ____________  ___   _   _ _____  _   _ _____ _   _ _____
 | ___ \ ___ \/ _ \ | \ | /  __ \| | | |_   _| \ | |  __ \
