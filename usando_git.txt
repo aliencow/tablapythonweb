@@ -139,6 +139,9 @@ git stash save --keep-index --include-untracked
 # Si queremos descartar los cambios hechos en local desde el ultimo commit y
 # sincronizar con el master con pull
 
+git push --force --set-upstream origin master
+#forzar a que el repositorio se actualice con el local
+
 ____________  ___   _   _ _____  _   _ _____ _   _ _____
 | ___ \ ___ \/ _ \ | \ | /  __ \| | | |_   _| \ | |  __ \
 | |_/ / |_/ / /_\ \|  \| | /  \/| |_| | | | |  \| | |  \/
